@@ -75,14 +75,14 @@ export function Contact() {
                 </div>
               </Reveal>
               <Reveal delay={0.1}>
-                <h2 className="font-display text-5xl font-semibold tracking-tighter md:text-7xl">
+                <h2 className="font-display text-4xl font-semibold tracking-tighter md:text-7xl">
                   Got a wild <span className="text-gradient">idea?</span>
                   <br />
                   Let's ship it.
                 </h2>
               </Reveal>
               <Reveal delay={0.2}>
-                <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+                <p className="mt-6 max-w-xl text-xl text-muted-foreground">
                   I'm open to full-stack, middleware and AI-integration collaborations —
                   consulting, side projects, or just a good conversation.
                 </p>
@@ -91,11 +91,11 @@ export function Contact() {
               <Reveal delay={0.3}>
                 <div className="mt-10 flex flex-wrap items-center gap-4">
                   <a
-                    href="mailto:devsharma.pcm.2003@gmail.com"
+                    href="mailto:devvratsharma026@gmail.com"
                     className="group relative overflow-hidden rounded-full bg-gradient-to-r from-[var(--aurora-violet)] via-[var(--aurora-magenta)] to-[var(--aurora-cyan)] p-[1.5px]"
                   >
-                    <span className="relative flex items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium transition-all group-hover:bg-transparent group-hover:text-background">
-                      devsharma.pcm.2003@gmail.com
+                    <span className="relative flex items-center gap-2 rounded-full bg-background px-6 py-3 text-lg font-medium transition-all group-hover:bg-transparent group-hover:text-background">
+                      devvratsharma026@gmail.com
                       <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
                     </span>
                   </a>
@@ -105,7 +105,7 @@ export function Contact() {
               <Reveal delay={0.4}>
                 <div className="mt-12 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-2">
                   {[
-                    { icon: Mail, label: "Email", value: "devsharma.pcm.2003@gmail.com", href: "mailto:devsharma.pcm.2003@gmail.com" },
+                    { icon: Mail, label: "Email", value: "devvratsharma026@gmail.com", href: "mailto:devvratsharma026@gmail.com" },
                     { icon: Phone, label: "Phone", value: "+91 82874 09792", href: "tel:+918287409792" },
                     { icon: Github, label: "GitHub", value: "@devvrat", href: "https://github.com/DevvratSharma026" },
                     { icon: Linkedin, label: "LinkedIn", value: "Devvrat Sharma", href: "https://linkedin.com/in/devvrat-sharma" },
@@ -117,12 +117,12 @@ export function Contact() {
                       target={c.href.startsWith("http") ? "_blank" : undefined}
                       rel="noreferrer"
                     >
-                      <div className="font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
+                      <div className="font-mono text-[13px] uppercase tracking-[0.25em] text-muted-foreground">
                         {c.label}
                       </div>
                       <div className="mt-2 flex items-center gap-2 text-foreground transition-colors group-hover:text-[var(--aurora-cyan)]">
                         <c.icon className="h-4 w-4" />
-                        <span className="truncate text-sm">{c.value}</span>
+                        <span className="truncate text-base">{c.value}</span>
                       </div>
                     </a>
                   ))}
@@ -213,9 +213,9 @@ export function Contact() {
                     <button
                       type="submit"
                       disabled={status === "submitting"}
-                      className="group relative w-full overflow-hidden rounded-full bg-linear-to-r from-[var(--aurora-violet)] via-[var(--aurora-magenta)] to-[var(--aurora-cyan)] p-[1.5px] disabled:opacity-70"
+                      className="group relative w-full overflow-hidden rounded-full bg-linear-to-r from-[var(--aurora-violet)] via-aurora-magenta to-[var(--aurora-cyan)] p-[1.5px] disabled:opacity-70"
                     >
-                      <span className="relative flex items-center justify-center gap-2 rounded-full bg-background px-6 py-3.5 text-sm font-medium transition-all group-hover:bg-transparent group-hover:text-background">
+                      <span className="relative flex items-center justify-center gap-2 rounded-full bg-background px-6 py-3.5 text-lg font-medium transition-all group-hover:bg-transparent group-hover:text-background">
                         {status === "submitting" ? (
                           <>
                             <Loader2 className="h-4 w-4 animate-spin" /> Sending…

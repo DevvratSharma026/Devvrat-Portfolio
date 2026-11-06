@@ -8,7 +8,7 @@ export function About() {
 
         <div className="grid gap-10 md:grid-cols-5">
           <Reveal className="md:col-span-3">
-            <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
+            <div className="space-y-5 text-xl leading-relaxed text-muted-foreground">
               <p>
                 I'm an <span className="text-foreground">Application Developer at IBM</span>,
                 working on Oracle Integration Cloud, SOA Suite and WebLogic — designing the
@@ -16,7 +16,7 @@ export function About() {
               </p>
               <p>
                 Off the clock, I build <span className="text-foreground">production-grade full-stack apps</span> that
-                fuse the MERN stack with LLMs — Groq LLaMA-3, AWS GenAI, Claude — turning
+                fuse the MERN stack with GenAI, AWS GenAI, Claude — turning
                 repositories into insights and notes into conversations.
               </p>
               <p>
@@ -30,14 +30,14 @@ export function About() {
           <Reveal delay={0.15} className="md:col-span-2">
             <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md">
               <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--aurora-violet)]/30 blur-3xl" />
-              <div className="relative space-y-4 text-sm">
+              <div className="relative space-y-4 text-md">
                 {[
-                  ["Base", "Bengaluru, India"],
-                  ["Role", "Associate System Engineer · IBM"],
+                  ["Base", "Delhi, India"],
+                  ["Role", "Application Developer · IBM"],
                   ["Domain", "Oracle Integration Cloud (OIC)"],
                   ["Side stack", "MERN + LLM tooling"],
                   ["Education", "B.Tech IT · GGSIPU · 2021–25"],
-                  ["Focus", "Middleware · GenAI · DX"],
+                  ["Focus", "Middleware · GenAI · Developement"],
                 ].map(([k, v]) => (
                   <div key={k} className="flex items-baseline justify-between gap-4 border-b border-white/5 pb-3 last:border-0 last:pb-0">
                     <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">

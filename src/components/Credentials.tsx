@@ -36,11 +36,11 @@ export function Credentials() {
               <div className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:border-white/20">
                 <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[var(--aurora-violet)]/20 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative">
-                  <div className="grid h-12 w-12 place-items-center rounded-xl border border-white/10 bg-gradient-to-br from-[var(--aurora-violet)]/20 to-[var(--aurora-cyan)]/20 text-[var(--aurora-cyan)]">
+                  <div className="grid h-12 w-12 place-items-center rounded-xl border border-white/10 bg-gradient-to-br from-(--aurora-violet)/20 to-(--aurora-cyan)/20 text-aurora-cyan">
                     <c.icon className="h-5 w-5" />
                   </div>
-                  <h3 className="mt-6 font-display text-xl font-semibold">{c.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{c.issuer}</p>
+                  <h3 className="mt-6 font-display text-2xl font-semibold">{c.title}</h3>
+                  <p className="mt-1 text-lg text-muted-foreground">{c.issuer}</p>
                   <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground/70">
                     {c.time}
                   </p>

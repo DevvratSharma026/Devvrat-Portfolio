@@ -55,7 +55,7 @@ export function Work() {
                       {p.name}
                     </h3>
                     <p className="text-aurora mt-2 font-display text-lg">{p.tagline}</p>
-                    <p className="mt-5 max-w-2xl text-muted-foreground">{p.blurb}</p>
+                    <p className="mt-5 max-w-2xl text-muted-foreground text-lg">{p.blurb}</p>
                     <div className="mt-6 flex flex-wrap gap-2">
                       {p.stack.map((s) => (
                         <span

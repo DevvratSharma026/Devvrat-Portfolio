@@ -57,16 +57,16 @@ export function Experience() {
                   <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:bg-white/[0.05]">
                     <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--aurora-violet)] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <h3 className="font-display text-2xl font-semibold">
+                      <h3 className="font-display text-3xl font-semibold">
                         {job.role}
                       </h3>
-                      <span className="text-aurora font-display text-lg font-medium">
+                      <span className="text-aurora font-display text-xl font-medium">
                         {job.company}
                       </span>
                     </div>
                     <ul className="mt-5 space-y-2.5 text-muted-foreground">
                       {job.points.map((p) => (
-                        <li key={p} className="flex items-start gap-2">
+                        <li key={p} className="flex text-lg items-start gap-2">
                           <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[var(--aurora-cyan)]" />
                           <span className="flex-1">{p}</span>
                         </li>
@@ -76,7 +76,7 @@ export function Experience() {
                       {job.tags.map((t) => (
                         <span
                           key={t}
-                          className="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-[11px] uppercase tracking-wider text-muted-foreground"
+                          className="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-[15px] uppercase tracking-wider text-muted-foreground"
                         >
                           {t}
                         </span>

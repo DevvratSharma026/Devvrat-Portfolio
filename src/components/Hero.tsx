@@ -19,7 +19,7 @@ export function Hero() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--aurora-emerald)]" />
           </span>
           <span className="text-muted-foreground">
-            Application Developer @ IBM · Bengaluru
+            Application Developer @ IBM · Delhi
           </span>
         </motion.div>
 
@@ -46,7 +46,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease }}
-          className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl"
+          className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-2xl"
         >
           Middleware engineer crafting resilient{" "}
           <span className="text-foreground">Oracle Integration Cloud</span> flows by day,
@@ -107,7 +107,7 @@ export function Hero() {
             { k: "IBM", v: "Middleware · OIC" },
             { k: "8.64", v: "B.Tech IT CGPA" },
             { k: "2×", v: "AWS · IBM Certs" },
-            { k: "LLM", v: "Groq LLaMA-3 · GenAI" },
+            { k: "LLM", v: "Generative AI" },
           ].map((s) => (
             <div key={s.k} className="bg-background/40 p-5">
               <div className="font-display text-2xl font-semibold text-foreground">
